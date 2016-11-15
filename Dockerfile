@@ -14,6 +14,6 @@ RUN wget https://www.atlassian.com/software/confluence/downloads/binary/atlassia
 RUN chmod a+x atlassian-confluence-5.10.7-x64.bin
 RUN git clone https://github.com/mukendra/wiki.git
 RUN chmod 777 /home
-RUN  ./atlassian-confluence-5.10.7-x64.bin -q -varfile varfile
+RUN  ./atlassian-confluence-5.10.7-x64.bin
 EXPOSE 80 8090
 ENTRYPOINT /etc/init.d/confluence restart && sleep 3600
