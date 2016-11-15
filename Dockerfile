@@ -13,7 +13,7 @@ WORKDIR /home
 RUN wget https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-5.10.7-x64.bin
 RUN chmod a+x atlassian-confluence-5.10.7-x64.bin
 RUN git clone https://github.com/mukendra/wiki.git
-RUN chmod 777 /home
+RUN chmod 777 /home/varfile
 RUN ./atlassian-confluence-5.10.7-x64.bin -q -varfile varfile
 EXPOSE 80 8090
 ENTRYPOINT /etc/init.d/confluence restart && sleep 3600
