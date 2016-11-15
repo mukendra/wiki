@@ -4,7 +4,7 @@ MAINTAINER mukki
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get -y install apache2 
-RUN apt-get -y git
+RUN apt-get -y install git
 RUN apt-get -y install tomcat7
 RUN apt-get -y  install openjdk-7-jre
 RUN apt-get  -y install openjdk-7-jdk
